@@ -8,8 +8,6 @@ minutes_decade = (8 * (hours_year * 60)) + (2 * (hours_leap_year * 60))
 puts 'There are ' + minutes_decade.to_s + ' minutes in a decade.'
 
 puts 'How old am I in seconds if I was born at 2pm 28th Febuary 1980?'
-seconds_year = ((hours_year * 60) * 60) 
-seconds_leap_year = ((hours_leap_year * 60) * 60) 
 birth_time = Time.new(1980,"feb",28,14,00,00, "+01:00")
 age_seconds = Time.now.to_i - birth_time.to_i
 puts 'I am exactly ' + age_seconds.to_s + ' old at this moment.'
